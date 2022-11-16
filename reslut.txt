@@ -1,0 +1,14 @@
+____ 1 Salary Prediction
+
+	experiance,test_score,interview_score ->   salary
+	[2,9,6] -> 52905.98290598
+	[12,10,10] -> 90487.17948718
+
+
+____ 2 Cost Function
+
+	intercept=1374842247.4143465, coefficent=97431501358.82375, cost= 2.2478637282093267e+25
+
+
+
+ 
