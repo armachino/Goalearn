@@ -7,8 +7,23 @@ ____ 1 Salary Prediction
 
 ____ 2 Cost Function
 
-	intercept=1374842247.4143465, coefficent=97431501358.82375, cost= 2.2478637282093267e+25
+	Cost : 15.80225566791853
+    coefficient : 1.017739066897384
+    intercept : 1.9150188244035249
+    learning_rate : 1e-4
+
+___ 3 Save and Load Model	
+    joblib is faster in saving/loading large NumPy arrays, whereas pickle is faster with large collections of Python objects. Therefore, if your model contains large NumPy arrays (as the majority of models does), joblib should be faster
+Since pipelining is used to efficiently manage a large amount of data, joblib contains a replacement for pickle to work efficiently on large data.
+
+if you don't pickle large numpy arrays, then regular pickle can be significantly faster, especially on large collections of small python objects (e.g. a large dict of str objects) because the pickle module of the standard library is implemented in C while joblib is pure python.
+
+joblib can still be useful to load objects that have nested memory-mapped NumPy arrays. Memory-mapped files are used for accessing small portions of large files on disk, without copying the entire file into memory.
 
 
 
- 
+___ 4 Dummy Variables	
+    Dummy Variable Trap is a scenario in which variables are highly correlated to each other.
+
+    The Dummy Variable Trap leads to the problem known as multicollinearity. Multicollinearity occurs where there is a dependency between the independent features.
+    So, in order to overcome the problem of multicollinearity, one of the dummy variables has to be dropped.
