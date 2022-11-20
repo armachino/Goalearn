@@ -5,12 +5,15 @@ ____ 1 Salary Prediction
 	[12,10,10] -> 90487.17948718
 
 
-____ 2 Cost Function
 
-	Cost : 15.80225566791853
-    coefficient : 1.017739066897384
-    intercept : 1.9150188244035249
-    learning_rate : 1e-4
+
+____ 2 Cost Function
+    learning_rate : 1e-4    stopping_threshold=1e-20 :
+        Cost : 15.80225566791853
+        coefficient : 1.017739066897384
+        intercept : 1.9150188244035249
+
+
 
 ___ 3 Save and Load Model	
     joblib is faster in saving/loading large NumPy arrays, whereas pickle is faster with large collections of Python objects. Therefore, if your model contains large NumPy arrays (as the majority of models does), joblib should be faster
