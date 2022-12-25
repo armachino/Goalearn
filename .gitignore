@@ -1,6 +1,6 @@
 *.swp
 *.vscode
 **.ipynb_checkpoints
-
+archive
 .csv#
 checkpoint.ipynb
